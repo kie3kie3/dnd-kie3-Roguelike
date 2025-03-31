@@ -1,0 +1,31 @@
+html {
+    background-color: #f1e9d2;
+}
+
+.button {
+    background-color: #CE9127;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.content {
+    display:none;
+}
+
+input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+input[type=radio]:checked + .content {
+    display:block;
+}
+
+.button:checked {
+    background-color: aquamarine;
+}
